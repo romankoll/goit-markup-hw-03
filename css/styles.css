@@ -32,6 +32,11 @@ img {
 /*------reset end-----*/
 /*--------------HEADER---------------*/
 .logo {
+  display: inline-block;
+  width: 145px;
+  height: 31px;
+  margin: 24px 93px 25px 215px;
+
   font-family: 'Raleway';
 
   font-weight: 700;
@@ -46,6 +51,9 @@ img {
   color: #212121;
 }
 
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
 .nav-link {
   font-weight: 500;
   font-size: 14px;
@@ -76,6 +84,7 @@ img {
 
 /*--------------MAIN---------------*/
 .hero {
+  margin-bottom: 94px;
   width: 1600px;
   min-height: 600px;
   left: 0px;
@@ -84,11 +93,13 @@ img {
   background-color: #2f303a;
 }
 .hero-text {
+  display: inline-block;
+  margin-top: 200px;
+  margin-left: 452px;
   margin-bottom: 30px;
+
   width: 696px;
   height: 120px;
-  left: 452px;
-  top: 280px;
 
   font-weight: 900;
   font-size: 44px;
@@ -99,6 +110,9 @@ img {
   color: var(--text-fon-white-color);
 }
 .hero-btm {
+  display: inline-block;
+  margin-left: 692px;
+
   min-width: 216px;
   min-height: 50px;
   padding: 8px 31px;
@@ -146,6 +160,7 @@ img {
   color: var(--text-paragraf-color);
 }
 .activitys {
+  margin: 94px 616px 50px 616px;
   width: 368px;
 }
 .activitys,
@@ -157,9 +172,16 @@ img {
   letter-spacing: 0.03em;
 }
 .team {
+  margin: 94px 667px 50px 667px;
   width: 266px;
 }
+
+.img-foto {
+  margin-bottom: 30px;
+}
 .team-item-h {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -167,6 +189,8 @@ img {
   letter-spacing: 0.03em;
 }
 .team-item-p {
+  margin-bottom: 30px;
+
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
@@ -177,14 +201,27 @@ img {
 /*--------------MAIN---------------*/
 /*--------------footer---------------*/
 .footer {
+  width: 1600px;
+  height: 252px;
+  padding-left: 215px;
+  padding-top: 60px;
+
   background-color: #2f303a;
 }
 
 .logo-footer {
+  margin-bottom: 20px;
   color: var(--text-fon-white-color);
 }
 
+.footer-contacts {
+}
 .footer-adress-link {
+  display: inline-block;
+  width: 231px;
+  height: 21px;
+  margin-bottom: 9px;
+
   font-style: normal;
 
   font-size: 14px;
@@ -197,6 +234,11 @@ img {
   color: var(--link-focus-color);
 }
 .footer-contacts-link {
+  display: inline-block;
+  width: 231px;
+  height: 21px;
+  margin-bottom: 9px;
+
   font-style: normal;
   font-size: 14px;
   line-height: calc(24 / 14);
@@ -210,7 +252,16 @@ img {
 }
 /*--------------footer---------------*/
 /*--------------portfolio-main--------------*/
+.portfolio-btm {
+  margin: 100px 0 56px 537px;
+}
+
 .portfolio-btm-item {
+  display: inline-block;
+
+  min-width: 73px;
+  padding: 4px 20px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -235,6 +286,7 @@ img {
 }
 
 .portfolio-tool-h {
+  width: 322px;
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
@@ -243,6 +295,7 @@ img {
   color: #212121;
 }
 .portfolio-tool-p {
+  width: 322px;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
