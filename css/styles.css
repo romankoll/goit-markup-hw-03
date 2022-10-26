@@ -7,13 +7,29 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #212121;
 }
+/*------reset start-----*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .link {
   text-decoration: none;
+  color: currentColor;
 }
-
+img {
+  display: block;
+}
+/*------reset end-----*/
 /*--------------HEADER---------------*/
 .logo {
   font-family: 'Raleway';
@@ -60,9 +76,20 @@ body {
 
 /*--------------MAIN---------------*/
 .hero {
+  width: 1600px;
+  min-height: 600px;
+  left: 0px;
+  top: 80px;
+
   background-color: #2f303a;
 }
 .hero-text {
+  margin-bottom: 30px;
+  width: 696px;
+  height: 120px;
+  left: 452px;
+  top: 280px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
@@ -72,6 +99,10 @@ body {
   color: var(--text-fon-white-color);
 }
 .hero-btm {
+  min-width: 216px;
+  min-height: 50px;
+  padding: 8px 31px;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -84,11 +115,12 @@ body {
   cursor: pointer;
   color: var(--text-fon-white-color);
   border-color: transparent;
+
+  border-radius: 4px;
 }
 .hero-btm:hover,
 .hero-btm:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 
 .features {
@@ -96,6 +128,9 @@ body {
 .features-item {
 }
 .features-item-h {
+  width: 270px;
+  height: 16px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -103,11 +138,15 @@ body {
   text-transform: uppercase;
 }
 .features-item-p {
+  width: 270px;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 
   color: var(--text-paragraf-color);
+}
+.activitys {
+  width: 368px;
 }
 .activitys,
 .team {
@@ -117,7 +156,9 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
-
+.team {
+  width: 266px;
+}
 .team-item-h {
   font-weight: 500;
   font-size: 16px;
