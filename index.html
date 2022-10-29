@@ -25,8 +25,8 @@
     <title>WEB STUDIO</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header-container container">
+    <header class="header container">
+      <div class="header-container">
         <a class="logo link" href="./index.html" lang="en"
           >Web<span class="logo-header">Studio</span>
         </a>
@@ -56,43 +56,51 @@
           <button type="button" class="hero-btn">Замовити послугу</button>
         </div>
       </section>
-      <section>
-        <h2 hidden>Особливості</h2>
-        <ul class="features list">
-          <li class="features-item">
-            <h3 class="features-item-h">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="features-item-p">
-              Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-            </p>
-          </li>
-          <li class="features-item">
-            <h3 class="features-item-h">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="features-item-p">
-              Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
-            </p>
-          </li>
-          <li class="features-item">
-            <h3 class="features-item-h">ПЛАНУВАННЯ</h3>
-            <p class="features-item-p">
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
-          </li>
-          <li class="features-item">
-            <h3 class="features-item-h">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="features-item-p">
-              Значимість цих проблем настільки очевидна, що реалізація планових завдань.
-            </p>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2 class="activitys">Чим ми займаємося</h2>
-        <ul class="activitys-foto list">
-          <li><img src="./images/box1.jpg" alt="tablet1" width="370" /></li>
-          <li><img src="./images/box2.jpg" alt="tablet1" width="370" /></li>
-          <li><img src="./images/box3.jpg" alt="tablet1" width="370" /></li>
-        </ul>
-      </section>
+      <div class="container">
+        <section>
+          <h2 hidden>Особливості</h2>
+          <ul class="features list">
+            <li class="features-item">
+              <h3 class="features-item-h">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="features-item-p">
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+              </p>
+            </li>
+            <li class="features-item">
+              <h3 class="features-item-h">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="features-item-p">
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+              </p>
+            </li>
+            <li class="features-item">
+              <h3 class="features-item-h">ПЛАНУВАННЯ</h3>
+              <p class="features-item-p">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="features-item">
+              <h3 class="features-item-h">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="features-item-p">
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2 class="activitys">Чим ми займаємося</h2>
+          <ul class="activitys-foto card-set list">
+            <li class="card-set-items">
+              <img src="./images/box1.jpg" alt="tablet1" width="370" />
+            </li>
+            <li class="card-set-items">
+              <img src="./images/box2.jpg" alt="tablet1" width="370" />
+            </li>
+            <li class="card-set-items">
+              <img src="./images/box3.jpg" alt="tablet1" width="370" />
+            </li>
+          </ul>
+        </section>
+      </div>
       <section>
         <div class="team-container">
           <h2 class="team">Наша команда</h2>
@@ -135,7 +143,7 @@
       </a>
       <address>
         <ul class="footer-contacts list">
-          <li>
+          <li class="footer-nav-items">
             <a
               href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42732700000001%2C30.538092&z=17"
               class="footer-adress-link link"
@@ -145,13 +153,13 @@
               м. Київ, пр-т Лесі Українки, 26</a
             >
           </li>
-          <li>
+          <li class="footer-nav-items">
             <a href="info@devstudio.com" class="footer-contacts-link link" lang="en"
               >info@devstudio.com</a
             >
           </li>
-          <li>
-            <a href="tel:+380961111111" class="footer-contacts-link link">+38 096 111 11 11</a>
+          <li class="footer-nav-items">
+            <a href="tel:+380961111111" class="footer-tel-link link">+38 096 111 11 11</a>
           </li>
         </ul>
       </address>

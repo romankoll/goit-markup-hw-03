@@ -2,12 +2,26 @@
   --link-focus-color: #2196f3;
   --text-paragraf-color: #757575;
   --text-fon-white-color: #ffffff;
+
+  --indent: 30px;
+  --items: 3;
 }
 body {
   font-family: 'Roboto', sans-serif;
   color: #212121;
   width: 1600px;
 }
+
+/*------card set-----*/
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+.card-set-items {
+  flex-basis: calc((100%-var(--indent)) * (var(--items)-1)) / (var(--items));
+}
+
 /*------reset start-----*/
 h1,
 h2,
@@ -15,7 +29,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+ul {
   margin: 0;
 }
 .list {
@@ -29,6 +44,10 @@ p {
 }
 img {
   display: block;
+}
+.container {
+  padding-left: 215px;
+  padding-right: 215px;
 }
 /*.container {
   width: 80vw;
@@ -46,7 +65,7 @@ img {
 }
 .logo {
   display: inline-block;
-  margin-left: 215px;
+
   margin-right: 93px;
   width: 145px;
   height: 31px;
@@ -71,10 +90,10 @@ img {
   display: flex;
   gap: 50px;
 }
-.nav-item: {
-  padding: 32px 0;
+.nav-item {
 }
 .nav-link {
+  padding: 32px 0;
   margin-left: auto;
 
   font-weight: 500;
@@ -160,7 +179,6 @@ img {
 
 .features {
   display: flex;
-  margin-left: 215px;
   margin-bottom: 94px;
   gap: 30px;
 }
@@ -190,9 +208,7 @@ img {
   margin-bottom: 50px;
 }
 .activitys-foto {
-  display: flex;
-  gap: 30px;
-  margin-left: 215px;
+  margin: 0 auto;
   margin-bottom: 94px;
 }
 .activitys,
@@ -264,13 +280,14 @@ img {
   margin-bottom: 20px;
   color: var(--text-fon-white-color);
 }
-
 .footer-contacts {
+}
+.footer-contacts-items {
 }
 .footer-adress-link {
   display: inline-block;
   width: 231px;
-  height: 21px;
+
   margin-bottom: 9px;
 
   font-style: normal;
@@ -286,6 +303,7 @@ img {
 }
 .footer-contacts-link {
   display: inline-block;
+  width: 231px;
   margin-bottom: 9px;
 
   font-style: normal;
@@ -297,6 +315,23 @@ img {
 }
 .footer-contacts-link:hover,
 .footer-contacts-link:focus {
+  color: var(--link-focus-color);
+}
+
+.footer-tel-link {
+  display: inline-block;
+  width: 231px;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-tel-link:hover,
+.footer-tel-link:focus {
   color: var(--link-focus-color);
 }
 /*--------------footer---------------*/
