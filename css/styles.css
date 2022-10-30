@@ -19,7 +19,7 @@ body {
   gap: var(--indent);
 }
 .card-set-items {
-  flex-basis: calc((100%-var(--indent)) * (var(--items)-1)) / (var(--items));
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
 /*------reset start-----*/
@@ -135,8 +135,7 @@ img {
   background-color: #2f303a;
 }
 .hero-text {
-  display: inline-block;
-  margin-left: 452px;
+  margin: 0 auto;
   margin-bottom: 30px;
 
   width: 696px;
@@ -180,9 +179,9 @@ img {
 .features {
   display: flex;
   margin-bottom: 94px;
-  gap: 30px;
 }
-.features-item {
+.features-item:not(:last-child) {
+  margin-right: 30px;
 }
 .features-item-h {
   width: 270px;
@@ -208,7 +207,6 @@ img {
   margin-bottom: 50px;
 }
 .activitys-foto {
-  margin: 0 auto;
   margin-bottom: 94px;
 }
 .activitys,
@@ -228,10 +226,10 @@ img {
   margin-bottom: 50px;
 }
 .team-list {
-  display: flex;
-  gap: 30px;
+  --items: 4;
 }
 .team-list-items {
+  max-width: 270px;
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: #ffffff;
@@ -280,15 +278,14 @@ img {
   margin-bottom: 20px;
   color: var(--text-fon-white-color);
 }
-.footer-contacts {
+
+.footer-nav-items:not(:last-child) {
+  margin-bottom: 9px;
 }
-.footer-contacts-items {
-}
+
 .footer-adress-link {
   display: inline-block;
   width: 231px;
-
-  margin-bottom: 9px;
 
   font-style: normal;
 
@@ -304,7 +301,6 @@ img {
 .footer-contacts-link {
   display: inline-block;
   width: 231px;
-  margin-bottom: 9px;
 
   font-style: normal;
   font-size: 14px;
@@ -318,22 +314,6 @@ img {
   color: var(--link-focus-color);
 }
 
-.footer-tel-link {
-  display: inline-block;
-  width: 231px;
-
-  font-style: normal;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
-
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-tel-link:hover,
-.footer-tel-link:focus {
-  color: var(--link-focus-color);
-}
 /*--------------footer---------------*/
 /*--------------portfolio-main--------------*/
 .portfolio-container {
@@ -373,9 +353,6 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-tool {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
 }
 .portfolio-tools-text {
   padding: 20px 22px;
