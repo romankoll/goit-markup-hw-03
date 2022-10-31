@@ -179,13 +179,13 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .features-container {
-  padding: 94px 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .features {
   display: flex;
   justify-content: center;
-  margin-bottom: 94px;
 }
 .features-item:not(:last-child) {
   margin-right: 30px;
@@ -218,7 +218,6 @@ img {
   margin-bottom: 50px;
 }
 .activitys-foto {
-  margin-bottom: 94px;
 }
 .activitys,
 .team {
@@ -370,14 +369,14 @@ img {
 }
 .portfolio-tools-text {
   display: block;
-  width: 322;
+  width: 370px;
   padding: 20px 22px;
   border: 1px solid #eeeeee;
   border-top: transparent;
 }
 .portfolio-tool-h {
   margin-bottom: 4px;
-  width: 322;
+  width: 322px;
 
   font-weight: 700;
   font-size: 18px;
@@ -387,6 +386,8 @@ img {
   color: #212121;
 }
 .portfolio-tool-p {
+  width: 322px;
+
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
