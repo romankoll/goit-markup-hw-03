@@ -25,14 +25,16 @@
     <title>WEB STUDIO</title>
   </head>
   <body>
-    <header class="header container">
-      <div class="header-container">
+    <header class="header">
+      <div class="header-container container">
         <a class="logo link" href="./index.html" lang="en"
           >Web<span class="logo-header">Studio</span>
         </a>
         <nav class="nav-list-container">
           <ul class="nav-list list">
-            <li class="nav-item"><a href="./index.html" class="nav-link link"> Студія</a></li>
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link active link"> Студія</a>
+            </li>
             <li class="nav-item">
               <a href="./portfolio.html " class="nav-link link"> Портфоліо</a>
             </li>
@@ -51,14 +53,15 @@
     </header>
     <main>
       <section class="hero">
-        <div class="hero-container">
+        <div class="hero-container container">
           <h1 class="hero-text">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
           <button type="button" class="hero-btn">Замовити послугу</button>
         </div>
       </section>
-      <div class="container">
-        <section>
-          <h2 hidden>Особливості</h2>
+
+      <section>
+        <h2 hidden>Особливості</h2>
+        <div class="container features-container">
           <ul class="features list">
             <li class="features-item">
               <h3 class="features-item-h">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -85,24 +88,28 @@
               </p>
             </li>
           </ul>
-        </section>
-        <section>
+        </div>
+      </section>
+
+      <section>
+        <div class="container activitys-container">
           <h2 class="activitys">Чим ми займаємося</h2>
           <ul class="activitys-foto card-set list">
-            <li class="card-set-items">
+            <li class="activitys-img card-set-items">
               <img src="./images/box1.jpg" alt="tablet1" width="370" />
             </li>
-            <li class="card-set-items">
+            <li class="activitys-img card-set-items">
               <img src="./images/box2.jpg" alt="tablet1" width="370" />
             </li>
-            <li class="card-set-items">
+            <li class="activitys-img card-set-items">
               <img src="./images/box3.jpg" alt="tablet1" width="370" />
             </li>
           </ul>
-        </section>
-      </div>
-      <section>
-        <div class="team-container">
+        </div>
+      </section>
+
+      <section class="team-content">
+        <div class="team-container container">
           <h2 class="team">Наша команда</h2>
           <ul class="team-list card-set list">
             <li class="card-set-items">
@@ -138,33 +145,35 @@
       </section>
     </main>
     <footer class="footer">
-      <a class="logo-footer link" href="./index.html" lang="en"
-        >Web<span class="logo-footer-span">Studio</span>
-      </a>
-      <address>
-        <div class="footer-contacts-container">
-          <ul class="footer-contacts list">
-            <li class="footer-nav-items">
-              <a
-                href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42732700000001%2C30.538092&z=17"
-                class="footer-adress-link link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                м. Київ, пр-т Лесі Українки, 26</a
-              >
-            </li>
-            <li class="footer-nav-items">
-              <a href="info@devstudio.com" class="footer-contacts-link link" lang="en"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="footer-nav-items">
-              <a href="tel:+380961111111" class="footer-contacts-link link">+38 096 111 11 11</a>
-            </li>
-          </ul>
-        </div>
-      </address>
+      <div class="container">
+        <a class="logo-footer link" href="./index.html" lang="en"
+          >Web<span class="logo-footer-span">Studio</span>
+        </a>
+        <address>
+          <div class="footer-contacts-container">
+            <ul class="footer-contacts list">
+              <li class="footer-nav-items">
+                <a
+                  href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42732700000001%2C30.538092&z=17"
+                  class="footer-adress-link link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="footer-nav-items">
+                <a href="info@devstudio.com" class="footer-contacts-link link" lang="en"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer-nav-items">
+                <a href="tel:+380961111111" class="footer-contacts-link link">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </div>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
